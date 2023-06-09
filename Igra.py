@@ -10,7 +10,7 @@ five_window = None
 third_window = None
 four_window = None
 
-
+#Hi)
 
 def reset_stats():
     global Jena, Health, Psyho
