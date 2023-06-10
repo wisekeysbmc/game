@@ -101,7 +101,7 @@ def open_new_window():
     new_window.geometry("200x200+{}+{}".format(root.winfo_x() + root.winfo_width() // 2 - 100, root.winfo_y() + root.winfo_height() // 2 - 100))
     new_window.title("Комп")
     new_window.grab_set()  # Захват фокуса для нового окна
-    new_window.iconbitmap("D:\Code\CBeTbl\Igra\photo_2023-05-28_22-20-54.ico")
+    new_window.iconbitmap("D:\Code\CBeTbl\Igra\game\photo_2023-05-28_22-20-54.ico")
 
     # Создание четырех кнопок в новом окне
     button1 = tk.Button(new_window, text="Поиграть в игру", command=play_game)
@@ -127,7 +127,7 @@ def open_third_window():
     third_window.geometry("200x200+{}+{}".format(root.winfo_x() + root.winfo_width() // 2 - 100, root.winfo_y() + root.winfo_height() // 2 - 100))
     third_window.title("Музыка")
     third_window.grab_set()  # Захват фокуса для нового окна
-    third_window.iconbitmap("D:\Code\CBeTbl\Igra\photo_2023-05-28_22-20-54.ico")
+    third_window.iconbitmap("D:\Code\CBeTbl\Igra\game\photo_2023-05-28_22-20-54.ico")
 
     button1 = tk.Button(third_window, text="Поиграть на гитаре", command=gitara)
     button1.pack()
@@ -145,7 +145,7 @@ def open_four_window():
     four_window.geometry("200x200+{}+{}".format(root.winfo_x() + root.winfo_width() // 2 - 100, root.winfo_y() + root.winfo_height() // 2 - 100))
     four_window.title("Инструкции")
     four_window.grab_set()  # Захват фокуса для нового окна
-    four_window.iconbitmap("D:\Code\CBeTbl\Igra\photo_2023-05-28_22-20-54.ico")
+    four_window.iconbitmap("D:\Code\CBeTbl\Igra\game\photo_2023-05-28_22-20-54.ico")
     label = tk.Label(four_window, text='Статы не ниже нуля. Можно брать комп и гитару.', justify="left", wraplength=four_window.winfo_width())
     label.pack( padx=2, pady=20)
 
@@ -156,7 +156,7 @@ def open_five_window():
     five_window.geometry("200x200+{}+{}".format(root.winfo_x() + root.winfo_width() // 2 - 100, root.winfo_y() + root.winfo_height() // 2 - 100))
     five_window.title("G.O.")
     five_window.grab_set()
-    five_window.iconbitmap("D:\Code\CBeTbl\Igra\photo_2023-05-28_22-20-54.ico")
+    five_window.iconbitmap("D:\Code\CBeTbl\Igra\game\photo_2023-05-28_22-20-54.ico")
     label = tk.Label(five_window, text='Ты проиграл! Ещё попробуешь?', justify="left")
     label.pack(anchor="n", padx=10, pady=10)
 
@@ -187,13 +187,13 @@ root.title("Мрачная дрочильня")  # Заголовок окна
 root.geometry("720x480")  # Размер окна
 
 # Установка иконки
-root.iconbitmap("D:\Code\CBeTbl\Igra\photo_2023-05-28_22-20-54.ico")  # Замените "path/to/icon.ico" на путь к вашей иконке
+root.iconbitmap("D:\Code\CBeTbl\Igra\game\photo_2023-05-28_22-20-54.ico")  # Замените "path/to/icon.ico" на путь к вашей иконке
 
 # Привязка обработчика события закрытия окна
 root.protocol("WM_DELETE_WINDOW", on_closing)
 
 # Создание фона с картинкой
-background_image = Image.open("D:\Code\CBeTbl\Igra\Background.png")
+background_image = Image.open("D:\Code\CBeTbl\Igra\game\Background.png")
 background_photo = ImageTk.PhotoImage(background_image)
 background_label = tk.Label(root, image=background_photo)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
